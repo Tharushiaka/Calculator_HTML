@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Java Script calculator</title>
+	<script type="text/javascript">
+		function sum(num1,num2) {
+			document.write(num1+num2);
+		}
+
+		function sub(num1,num2) {
+			document.write(num1-num2);
+		}
+
+		function mul(num1,num2) {
+			document.write(num1*num2);
+		}
+
+		function dev(num1,num2) {
+			document.write(num1/num2);
+		}
+	</script>
+</head>
+<body>
+	<script>
+			var no1=prompt("Input first number");
+			var no2=prompt("Input second number");
+			var cal=prompt("Enter calculation(+,-,*,/)");
+
+			num1=parseInt(no1);
+			num2=parseInt(no2);
+
+			if(cal=="+"){
+				sum(num1,num2);
+			}else if(cal=="-"){
+				sub(num1,num2);
+			}else if(cal=="*"){
+				mul(num1,num2);
+			}else if(cal=="/"){
+				mul(num1,num2);
+			}else{
+				alert("Invalid Input");
+			}
+
+	</script>
+</body>
+</html>
